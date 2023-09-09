@@ -6,7 +6,7 @@
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 21:04:26 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/09 22:39:16 by nappalav         ###   ########.fr       */
+/*   Updated: 2023/09/09 23:18:46 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
 // int	main(void)
 // {
 // 	char a = 'a';
