@@ -3,8 +3,8 @@ the first project of 42 cadet. The project is about understanding the way these 
 
 # Table of contents
 
-##Mandatory part
-###Part 1 - Libc function
+**Mandatory part**
+Part 1 - Libc function
 Redoing a set of functions from libc. My ft_function will have the same prototypes and implement the same behaviors as the originals.
 
 function name | prototype | return value | Description
