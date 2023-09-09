@@ -6,29 +6,29 @@
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 01:01:36 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/05 22:52:43 by nappalav         ###   ########.fr       */
+/*   Updated: 2023/09/09 23:32:31 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t n)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	unsigned int	cnt;
 	size_t			size;
 
 	cnt = 1;
 	size = ft_strlen(src);
-	if (n == 0)
+	if (dstsize == 0)
 		return (size);
-	while (cnt < n && *src != '\0')
+	while (cnt < dstsize && *src != '\0')
 	{
-		*dest = *src;
+		*dst = *src;
 		src++;
-		dest++;
+		dst++;
 		cnt++;
 	}
-	*dest = '\0';
+	*dst = '\0';
 	return (size);
 }
 
@@ -43,7 +43,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 //   unsigned int n = 0 ;
 
 //   int len = ft_strlcpy(ptr_dest, "To be or not to be", n);
-//   printf("MY dest = %s\n", ptr_dest);
+//   printf("MY dst = %s\n", ptr_dest);
 //   int real_len = strlcpy(ptr_dest2, "To be or not to be", n);
 //    printf("Real dest = %s\n", ptr_dest2);
 

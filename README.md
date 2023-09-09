@@ -3,11 +3,11 @@ the first project of 42 cadet. The project is about understanding the way these 
 
 # Table of contents
 
-###Mandatory part
-#####Part 1 - Libc function
+##Mandatory part
+###Part 1 - Libc function
 Redoing a set of functions from libc. My ft_function will have the same prototypes and implement the same behaviors as the originals.
 
-function name | protrotype | return value | Description
+function name | prototype | return value | Description
 ------------- |----------- |------------- |----------- |
 | [ft_atoi](ft_atoi.c)            | `int ft_atoi(const char *str)`    | Converted integer value         | Converts a string `str` to an integer. |
 | [ft_bzero](ft_bzero.c)          | `void ft_bzero(void *s, size_t n)` | None                            | Sets the first `n` bytes of the memory area pointed to by `s` to zero. |
@@ -36,7 +36,7 @@ function name | protrotype | return value | Description
 
 
 ###Bonus part
-function name | protrotype | return value | Description
+function name | prototype | return value | Description
 ------------- |----------- |------------- |----------- |
 | [ft_lstadd_back](ft_lstadd_back.c) | `void ft_lstadd_back(t_list **lst, t_list *new)`    | None                         | Adds the element `new` to the end of the linked list `lst`.                   |
 | [ft_lstadd_front](ft_lstadd_front.c) | `void ft_lstadd_front(t_list **lst, t_list *new)` | None                         | Adds the element `new` to the beginning of the linked list `lst`.             |
