@@ -3,8 +3,8 @@ the first project of 42 cadet. The project is about understanding the way these 
 
 # Table of contents
 
-### Mandatory part**  
-##### Part 1 - Libc function  
+## Mandatory part
+### Part 1 - Libc function
 Redoing a set of functions from libc. My ft_function will have the same prototypes and implement the same behaviors as the originals.
 
 function name | prototype | return value | Description
@@ -33,9 +33,7 @@ function name | prototype | return value | Description
 | [ft_tolower](ft_tolower.c)      | `int ft_tolower(int c)`             | Converted lowercase character  | Converts an uppercase character to its lowercase equivalent. |
 | [ft_toupper](ft_toupper.c)      | `int ft_toupper(int c)`             | Converted uppercase character  | Converts a lowercase character to its uppercase equivalent. |
 
-
-
-###Bonus part
+## Bonus part
 function name | prototype | return value | Description
 ------------- |----------- |------------- |----------- |
 | [ft_lstadd_back](ft_lstadd_back.c) | `void ft_lstadd_back(t_list **lst, t_list *new)`    | None                         | Adds the element `new` to the end of the linked list `lst`.                   |
