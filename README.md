@@ -68,7 +68,7 @@ function name | prototype | return value | Description
 
 ##### Author
 Napat Palavathanakul (intra : nappalav)
-github.com/ppenquinn
+[github.com/ppenquinn](github.com/ppenquinn)
 
 
 
