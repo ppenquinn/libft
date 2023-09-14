@@ -6,7 +6,7 @@
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 16:22:41 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/04 23:06:49 by nappalav         ###   ########.fr       */
+/*   Updated: 2023/09/14 12:04:21 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,10 @@ int	ft_atoi(const char *str)
 	return (num);
 }
 
+// #include <stdio.h>
 // int	main(void)
 // {
-// 	char a[] = "2147483647";
+// 	char a[] = "9223372036854775807";
 // 	printf("real = %d\n",atoi(a));
 // 	printf("ft = %d\n",ft_atoi(a));
 // 	return 0;

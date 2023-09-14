@@ -2,7 +2,11 @@
 the first project of 42 cadet. The project is about understanding the way these function work by creating **my own library**.
 
 # Table of contents
-
+- [Mandatory Part](#mandatory-part)
+	- [part 1 - Libc functions](#part-1---libc-function)
+	- [part 2 - Additional functions](#part-2---additional-function)
+- [Bonus Part](#bonus-part)
+- [Author](#author)
 ## Mandatory part
 ### Part 1 - Libc function
 Redoing a set of functions from libc. My ft_function will have the same prototypes and implement the same behaviors as the originals.
@@ -33,6 +37,22 @@ function name | prototype | return value | Description
 | [ft_tolower](ft_tolower.c)      | `int ft_tolower(int c)`             | Converted lowercase character  | Converts an uppercase character to its lowercase equivalent. |
 | [ft_toupper](ft_toupper.c)      | `int ft_toupper(int c)`             | Converted uppercase character  | Converts a lowercase character to its uppercase equivalent. |
 
+### Part 2 - Additional function
+In this second part, it is a set of function that are either not in the libc or that are part of it in a dirfferent form.
+
+function name | prototype | return value | Description
+------------- |----------- |------------- |----------- |
+| [ft_substr](ft_substr.c)         | `char *ft_substr(char const *s, unsigned int start, size_t len)` | A new dynamically allocated string | Allocates and returns a substring from the string `s` starting at index `start` with a maximum length of `len`. |
+| [ft_strjoin](ft_strjoin.c)       | `char *ft_strjoin(char const *s1, char const *s2)`             | A new dynamically allocated string | Allocates and returns a new string resulting from concatenating `s1` and `s2`. |
+| [ft_strtrim](ft_strtrim.c)       | `char *ft_strtrim(char const *s1, char const *set)`            | A new dynamically allocated string | Allocates and returns a new string that is a copy of `s1` with leading and trailing characters from the `set` removed. |
+| [ft_split](ft_split.c)           | `char **ft_split(char const *s, char c)`                      | An array of strings                | Allocates and returns an array of strings obtained by splitting `s` using the character `c` as a delimiter. |
+| [ft_itoa](ft_itoa.c)             | `char *ft_itoa(int n)`                                         | A new dynamically allocated string | Allocates and returns a new string representing the integer `n`.               |
+| [ft_strmapi](ft_strmapi.c)       | `char *ft_strmapi(char const *s, char (*f)(unsigned int, char))` | A new dynamically allocated string | Allocates and returns a new string that is the result of applying the function `f` to each character in `s`. |
+| [ft_striteri](ft_striteri.c)     | `void ft_striteri(char *s, void (*f)(unsigned int, char *))`    | None                               | Applies the function `f` to each character of the string `s` with its index as an argument. |
+| [ft_putchar_fd](ft_putchar_fd.c) | `void ft_putchar_fd(char c, int fd)`                           | None                               | Writes the character `c` to the given file descriptor `fd`.                     |
+| [ft_putstr_fd](ft_putstr_fd.c)   | `void ft_putstr_fd(char *s, int fd)`                           | None                               | Writes the string `s` to the given file descriptor `fd`.                        |
+| [ft_putnbr_fd](ft_putnbr_fd.c)   | `void ft_putnbr_fd(int n, int fd)`                             | None                               | Writes the integer `n` to the given file descriptor `fd`.                       |
+
 ## Bonus part
 function name | prototype | return value | Description
 ------------- |----------- |------------- |----------- |
@@ -46,6 +66,9 @@ function name | prototype | return value | Description
 | [ft_lstnew](ft_lstnew.c)       | `t_list *ft_lstnew(void *content)`                 | New element or `NULL` on failure | Creates a new list element with the provided `content` and initializes the rest of the structure. |
 | [ft_lstsize](ft_lstsize.c)     | `int ft_lstsize(t_list *lst)`                      | Number of elements in the list | Counts and returns the number of elements in the linked list `lst`.          |
 
+##### Author
+Napat Palavathanakul (intra : nappalav)
+github.com/ppenquinn
 
 
 
