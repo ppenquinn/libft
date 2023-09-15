@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/10 23:09:09 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/09 23:28:43 by nappalav         ###   ########.fr       */
+/*   Created: 2023/09/15 02:17:32 by nappalav          #+#    #+#             */
+/*   Updated: 2023/09/15 12:02:56 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,14 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	char	*ptr;
+	size_t	idx;
 
-	ptr = &b[len - 1];
-	while (len > 0)
+	ptr = (char *) b;
+	idx = 0;
+	while (idx < len)
 	{
-		*ptr = c;
-		ptr--;
-		len--;
+		*(ptr + idx) = c;
+		idx++;
 	}
 	return (b);
 }

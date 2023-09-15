@@ -5,23 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/11 22:49:24 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/09 23:17:07 by nappalav         ###   ########.fr       */
+/*   Created: 2023/09/15 02:00:08 by nappalav          #+#    #+#             */
+/*   Updated: 2023/09/15 12:04:34 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	char	*ptr;
-
-	ptr = &s[n - 1];
-	while (n > 0)
-	{
-		*ptr = 0;
-		ptr--;
-		n--;
-	}
-	return (s);
+	s = ft_memset(s, 0, n);
 }

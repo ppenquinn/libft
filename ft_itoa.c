@@ -6,7 +6,7 @@
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 19:42:04 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/07 20:50:32 by nappalav         ###   ########.fr       */
+/*   Updated: 2023/09/15 11:47:10 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ char	*ft_itoa(int n)
 		digit = find_digits(n);
 	else if (n == 0)
 		digit = 1;
-	else if (n == -2147483648)
+	else if (n == INT_MIN)
 		digit = 11;
 	else
 		digit = find_digits(n * -1) + 1;

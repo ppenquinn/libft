@@ -6,7 +6,7 @@
 #    By: nappalav <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 00:29:16 by nappalav          #+#    #+#              #
-#    Updated: 2023/09/09 02:06:38 by nappalav         ###   ########.fr        #
+#    Updated: 2023/09/15 11:50:00 by nappalav         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,8 +22,9 @@ SRC = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 		ft_strlcpy.c ft_strlcat.c ft_strnstr.c ft_memmove.c ft_calloc.c ft_strdup.c\
 		ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_putchar_fd.c ft_putstr_fd.c\
 		ft_putendl_fd.c ft_itoa.c ft_putnbr_fd.c ft_strmapi.c ft_striteri.c
-SRCBONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
-			ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+SRCBONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c\
+			ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c\
+			ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 OBJ = ${SRC:.c=.o}
 OBJBONUS = ${SRCBONUS:.c=.o}
 
@@ -39,11 +40,11 @@ clean:
 		rm -f *.o
 
 fclean: clean
-		rm -f $(NAME)
+		rm -f $(OBJ) $(OBJBONUS)
 
 re:	fclean all
 
-bonus: $(OBJ) $(OBJBONUS)
-	$(AR) $(ARFLAGS) $(NAME) $(OBJ) $(OBJBONUS)
+bonus: $(OBJBONUS)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJBONUS)
 
-.PHONY: re clean fclean all
+.PHONY: re clean fclean all bonus
