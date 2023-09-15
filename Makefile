@@ -6,7 +6,7 @@
 #    By: nappalav <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 00:29:16 by nappalav          #+#    #+#              #
-#    Updated: 2023/09/15 11:50:00 by nappalav         ###   ########.fr        #
+#    Updated: 2023/09/15 17:32:56 by nappalav         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,10 +37,10 @@ $(NAME):$(OBJ)
 		$(CC) $(CFLAGS) $< -o $@
 
 clean:
-		rm -f *.o
+		rm -f $(OBJ) $(OBJBONUS)
 
 fclean: clean
-		rm -f $(OBJ) $(OBJBONUS)
+		rm -f $(NAME)
 
 re:	fclean all
 
