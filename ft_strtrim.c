@@ -6,7 +6,7 @@
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/03 17:37:54 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/04 22:29:10 by nappalav         ###   ########.fr       */
+/*   Updated: 2023/09/15 22:31:47 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*start;
 	char	*end;
 	char	*trim;
-	int		i;
-	int		len;
+	size_t	i;
+	size_t	len;
 
 	if (!s1)
 		return (NULL);

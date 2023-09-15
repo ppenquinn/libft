@@ -6,7 +6,7 @@
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 02:18:21 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/15 02:18:25 by nappalav         ###   ########.fr       */
+/*   Updated: 2023/09/15 22:30:51 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int	idx;
+	size_t	idx;
 
 	idx = 0;
 	while (s[idx])
