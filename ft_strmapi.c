@@ -6,7 +6,7 @@
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 00:28:49 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/08 00:57:36 by nappalav         ###   ########.fr       */
+/*   Updated: 2023/09/15 21:56:47 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	idx;
 	char			*str;
 
+	if (!s || !f)
+		return (NULL);
 	str = ft_strdup(s);
 	if (!str)
 		return (NULL);
