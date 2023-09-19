@@ -6,7 +6,7 @@
 #    By: nappalav <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 00:29:16 by nappalav          #+#    #+#              #
-#    Updated: 2023/09/19 16:24:26 by nappalav         ###   ########.fr        #
+#    Updated: 2023/09/19 16:39:01 by nappalav         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,10 +34,11 @@ all:	$(NAME)
 $(NAME):$(OBJ)
 		$(AR) $(ARFLAGS) $(NAME) $(OBJ)
 
-bonus:	$(BONUS)
+bonus: $(BONUS)
 
 $(BONUS):$(OBJBONUS)
 		$(AR) $(ARFLAGS) $(NAME) $(OBJBONUS)
+		$(AR) $(ARFLAGS) $(BONUS) $(OBJBONUS)
 
 %.o:	%.c
 		$(CC) $(CFLAGS) $< -o $@
@@ -46,7 +47,7 @@ clean:
 		rm -f $(OBJ) $(OBJBONUS)
 
 fclean: clean
-		rm -f $(NAME)
+		rm -f $(NAME) $(BONUS)
 
 re:	fclean all
 
