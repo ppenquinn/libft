@@ -6,11 +6,12 @@
 #    By: nappalav <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/29 00:29:16 by nappalav          #+#    #+#              #
-#    Updated: 2023/09/15 17:32:56 by nappalav         ###   ########.fr        #
+#    Updated: 2023/09/19 16:24:26 by nappalav         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+BONUS = libft_bonus.a
 CC = cc
 AR = ar
 CFLAGS = -Wall -Wextra -Werror -c
@@ -25,13 +26,18 @@ SRC = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 SRCBONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c\
 			ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c\
 			ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
-OBJ = ${SRC:.c=.o}
-OBJBONUS = ${SRCBONUS:.c=.o}
+OBJ = $(SRC:.c=.o)
+OBJBONUS = $(SRCBONUS:.c=.o)
 
 all:	$(NAME)
 
 $(NAME):$(OBJ)
 		$(AR) $(ARFLAGS) $(NAME) $(OBJ)
+
+bonus:	$(BONUS)
+
+$(BONUS):$(OBJBONUS)
+		$(AR) $(ARFLAGS) $(NAME) $(OBJBONUS)
 
 %.o:	%.c
 		$(CC) $(CFLAGS) $< -o $@
@@ -43,8 +49,5 @@ fclean: clean
 		rm -f $(NAME)
 
 re:	fclean all
-
-bonus: $(OBJBONUS)
-	$(AR) $(ARFLAGS) $(NAME) $(OBJBONUS)
 
 .PHONY: re clean fclean all bonus
