@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/15 16:22:41 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/15 21:55:34 by nappalav         ###   ########.fr       */
+/*   Created: 2023/09/19 18:37:48 by nappalav          #+#    #+#             */
+/*   Updated: 2023/09/20 12:15:46 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	handle_lld(long long num, char str, int sign)
+static int	handle_lld(long long num, char str, int sign)
 {
 	if (sign == 1)
 	{

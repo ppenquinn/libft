@@ -6,13 +6,13 @@
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 10:09:19 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/08 23:15:47 by nappalav         ###   ########.fr       */
+/*   Updated: 2023/09/20 12:16:23 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_count_words(char const *s, char c)
+static size_t	ft_count_words(char const *s, char c)
 {
 	size_t	i;
 	size_t	word;
@@ -37,7 +37,7 @@ size_t	ft_count_words(char const *s, char c)
 	return (word);
 }
 
-size_t	ft_count_chr(char const *s, char c)
+static size_t	ft_count_chr(char const *s, char c)
 {
 	size_t	i;
 	size_t	chr;
@@ -49,7 +49,7 @@ size_t	ft_count_chr(char const *s, char c)
 	return (chr);
 }
 
-void	*handle_malloc(char **str, size_t i)
+static void	*handle_malloc(char **str, size_t i)
 {
 	while (i > 0)
 	{
@@ -61,7 +61,7 @@ void	*handle_malloc(char **str, size_t i)
 	return (NULL);
 }
 
-char	**ft_sep(char *temp, char c, size_t word, char **str)
+static char	**ft_sep(char *temp, char c, size_t word, char **str)
 {
 	size_t	i;
 	size_t	j;

@@ -6,13 +6,13 @@
 /*   By: nappalav <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 19:42:04 by nappalav          #+#    #+#             */
-/*   Updated: 2023/09/15 11:47:10 by nappalav         ###   ########.fr       */
+/*   Updated: 2023/09/20 12:17:02 by nappalav         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	toa(int n, char *ans, size_t digit)
+static void	toa(int n, char *ans, size_t digit)
 {
 	if (n < 0 && n > -10)
 		*ans = '-';
@@ -27,7 +27,7 @@ void	toa(int n, char *ans, size_t digit)
 		*(ans + digit) = '0' - n;
 }
 
-size_t	find_digits(int n)
+static size_t	find_digits(int n)
 {
 	size_t	digit;
 
